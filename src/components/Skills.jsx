@@ -33,7 +33,7 @@ const Skills = () => {
         <Container>
             <Row>
                 <Col>
-                    <div className='skills-bx'>
+                    <div className='skills-bx'  >
                         <h2>
                             Skills
                         </h2>
