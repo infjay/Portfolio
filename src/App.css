@@ -305,12 +305,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   position: relative;
 }
+.skill h5 {
+  align-items: center;
+}
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+}
+.skill-bx h5{
+  align-items: center;
+  text-align: center;
 }
 .skill h2 {
 	font-size: 45px;
