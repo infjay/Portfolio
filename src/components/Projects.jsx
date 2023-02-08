@@ -5,19 +5,22 @@ import colorSharp from "../assets/img/color-sharp.png"
 import projImg1 from "../assets/img/project-img1.png"
 import projImg2 from "../assets/img/project-img2.png"
 import projImg3 from "../assets/img/project-img3.png"
+import nfsImg from "../assets/img/NFS.png"
 import TrackVisibility from "react-on-screen";
 import "animate.css"
 const Projects = () => {
   const projects = [
     {
-      title: "Hospify",
-      description: "Appointment Management for Hospitals",
-      imgUrl: projImg1,
-    },
-    {
       title: "Gericht Restaurant",
       description: "Fine dining restaurant's Landing page",
       imgUrl: projImg2,
+      link:"https://infjay.github.io/gericht-restaurant/"
+    },
+    {
+      title: "Landing Page for Chat-GPT",
+      description: "Appointment Management for Hospitals",
+      imgUrl: projImg1,
+      link:"https://infjay.github.io/gp3-AI/"
     },
     {
       title: "MyTube",
@@ -25,11 +28,13 @@ const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "ChatGPT",
-      description: "Landing Page for ChatGPT",
-      imgUrl: "",
-    },
-  ];
+      title: "NFS Game",
+      description: "A game made wit Vanilla JS",
+      imgUrl: nfsImg,
+      link:"https://infjay.github.io/NFS-v0.1/"
+
+    }
+  ]
   return (
     <section className="project" id="projects">
       <Container>
