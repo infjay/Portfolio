@@ -21,10 +21,10 @@ const Contact = () => {
         })
     }
 
-    const handleSubmit = (e)=> {
+    const handleSubmit = (e)=>  {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("http://localhost:5000/contact",{
+        let response =  fetch("http://localhost:5000/contact",{
         method: "POST",
         headers:{
             "Content-Type": "application/json;charset=utf-8",
@@ -40,6 +40,8 @@ const Contact = () => {
         setStatus({success: false,message:"Something went wrong,please try again later"})
     }
     }
+
+    
   return (
     <section className='contact' id="contact"> 
         <Container>
