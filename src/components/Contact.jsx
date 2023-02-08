@@ -24,7 +24,11 @@ const Contact = () => {
     const handleSubmit = (e)=>  {
         e.preventDefault();
         setButtonText("Sending...");
+<<<<<<< HEAD
         let response =  fetch("http://localhost:5000/contact",{
+=======
+        let response = fetch("http://localhost:5000/contact",{
+>>>>>>> 3eaca86dbec377fb62099da37011a91a37dd598b
         method: "POST",
         headers:{
             "Content-Type": "application/json;charset=utf-8",

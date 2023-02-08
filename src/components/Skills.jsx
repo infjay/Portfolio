@@ -41,15 +41,15 @@ const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className='item'>
                                 <img src={meter1} alt="Image" />
-                                <h5>JavaScript</h5>
+                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</h5>
                             </div>
                             <div className='item'>
                                 <img src={meter2} alt="Image" />
-                                <h5>React</h5>
+                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React</h5>
                             </div>
                             <div className='item'>
                                 <img src={meter3} alt="Image" />
-                                <h5>CSS/MUI/Bootstrap</h5>
+                                <h5>MUI/Bootstrap</h5>
                             </div>
                           
                         </Carousel>
