@@ -1,10 +1,10 @@
-import { update } from 'lodash'
+
 import React,{useState,useEffect} from 'react'
-import {Container, Row, Col } from "react-bootstrap"
+import {Container, Row} from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
 import "animate.css"
 import TrackVisibility from 'react-on-screen';
+import 'lazysizes';
 
 
 const Banner = () => {
@@ -42,10 +42,9 @@ const Banner = () => {
     }
 
     return (
-    <section className='banner' id="home">
-        <Container>
-            <Row className="align-items-center">
-                <Col xs={12} md={6} xl={7}>
+    <section className='banner' id="home" >
+        <Container >
+            <Row>
                     <TrackVisibility>
                     {({ isVisible })=> 
                     <div className={isVisible ? "animate__animated animate__zoomInDown" : ""}>
@@ -61,11 +60,6 @@ const Banner = () => {
                     </div>
                     }
                     </TrackVisibility>
-
-                </Col>
-                <Col xs={12} md={6} xl={5}>
-                    <img src={headerImg} alt="Header Img" />
-                </Col>
             </Row>
         </Container>
     </section>
