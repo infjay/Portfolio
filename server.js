@@ -19,7 +19,7 @@ const contactEmail = nodemailer.createTransport({
     pass: process.env.PASSWORD
   },
 });
-console.log(contactEmail);
+;
 
 contactEmail.verify((error) => {
   if (error) {
