@@ -2,55 +2,64 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container , Row , Col } from "react-bootstrap"
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
+import JavaScript from "../assets/img/javascript.svg"
+import react from "../assets/img/react.svg"
+import nodejs from "../assets/img/nodejs.svg"
+import bootstrap from "../assets/img/bootstrap.svg"
+import figma from "../assets/img/figma.svg"
+import typescript from "../assets/img/typescript.svg"
 import colorSharp from "../assets/img/color-sharp.png"
-
 
 const Skills = () => {
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5
+          items: 7
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 6
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 5
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
-          items: 1
+          items: 4
         }
       };
   return (
-    <section className='skill' id="skills">
+    <section className='skill' id="skills" >
         <Container>
             <Row>
                 <Col>
                     <div className='skills-bx'  >
                         <h2>
-                            Skills
+                            Tech Stack
                         </h2>
-                        <p>Meow Meow Meow</p>
+                      
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className='item'>
-                                <img src={meter1} alt="Image" />
-                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</h5>
+                                <img src={JavaScript} alt="Image" />
                             </div>
                             <div className='item'>
-                                <img src={meter2} alt="Image" />
-                                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React</h5>
+                                <img src={react} alt="Image" />
                             </div>
                             <div className='item'>
-                                <img src={meter3} alt="Image" />
-                                <h5>MUI/Bootstrap</h5>
+                                <img src={typescript} alt="Image" />
                             </div>
+                            <div className='item'>
+                                <img src={nodejs} alt="Image" />
+                            </div>
+                            <div className='item'>
+                                <img src={bootstrap} alt="Image" />
+                            </div>
+                            <div className='item'>
+                                <img src={figma} alt="Image" />
+                            </div>
+                
                           
                         </Carousel>
                     </div>
