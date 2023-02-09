@@ -10,7 +10,7 @@ import 'lazysizes';
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["Web Developer", "Web 3.0 Enthusiast","Blockchain"]
+    const toRotate = ["Frontend Developer","Design Enthusiast"]
     const [text, setText] = useState("");
     const period = 2000;
     const [delta, setDelta] = useState(300-Math.random()*100);
@@ -42,7 +42,7 @@ const Banner = () => {
     }
 
     return (
-    <section className='banner' id="home" >
+    <section className='banner' id="home"  >
         <Container >
             <Row>
                     <TrackVisibility>
@@ -51,7 +51,7 @@ const Banner = () => {
                     <span className='tagline'>Welcome to my Portfolio</span>
                     </div>}
                     </TrackVisibility>
-                    <h1>{`Hi I'm Jawid `}<span className='wrap'>{text}</span></h1>
+                    <h1>{`Hi I'm Jawid, `}<span className='wrap'>{text}</span></h1>
                     <p>One Line of Code at a Time</p>
                     <TrackVisibility>
                     {({ isVisible })=> 

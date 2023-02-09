@@ -15,8 +15,8 @@ app.listen(5000, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.USERNAME_GMAIL,
-    pass: process.env.PASSWORD
+    user: process.env.REACT_APP_USERNAME_GMAIL,
+    pass: process.env.REACT_APP_PASSWORD
   },
 });
 ;
@@ -35,8 +35,8 @@ router.post("/contact", (req, res) => {
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
-    from: process.env.USERNAME_GMAIL,
-    to: process.env.USERNAME_GMAIL,
+    from: process.env.REACT_APP_USERNAME_GMAIL,
+    to: process.env.REACT_APP_USERNAME_GMAIL,
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>

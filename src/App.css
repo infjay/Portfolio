@@ -95,12 +95,14 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 0px 0 0px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 20;
   transition:  0.32s ease-in-out;
+  background-color: #000;
+  background-blend-mode: hard-light;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -110,7 +112,7 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 .navbar-brand img{
-  size-adjust: 120px;
+  size: 100px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -250,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 400px 0 300px 0;
   background-image: url('./assets/img/bg2.jpg');
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: top center;
   background-size:cover;
   background-repeat:no-repeat;
