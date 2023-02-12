@@ -4,8 +4,12 @@ import {Container, Col, Row,Tab,Nav} from "react-bootstrap"
 import colorSharp from "../assets/img/color-sharp.png"
 import projImg1 from "../assets/img/project-img1.png"
 import projImg2 from "../assets/img/project-img2.png"
+import mytube from "../assets/img/mytube.png"
+import ajdrinks from "../assets/img/ajdrinks.png"
 import nfsImg from "../assets/img/NFS.png"
+import hospify from "../assets/img/hospify.png"
 import TrackVisibility from "react-on-screen";
+
 import "animate.css"
 const Projects = () => {
   const projects = [
@@ -22,9 +26,22 @@ const Projects = () => {
       link:"https://infjay.github.io/gp3-AI/"
     },
     {
+      title: "Hospify",
+      description: "Appointment managment app for hospitals",
+      imgUrl: hospify,
+      link:"https://github.com/infjay/hospify-project-client"
+    },
+    {
       title: "MyTube",
       description: "Video streaming platform inspired by YouTube",
-      imgUrl: "",
+      imgUrl: mytube,
+      link:"https://github.com/infjay/mytube"
+    },
+    {
+      title: "AJ Drinks",
+      description: "Alcoholic drinks directory with CRUD functionallity",
+      imgUrl: ajdrinks,
+      link:"https://github.com/abg1995/AJDrinks"
     },
     {
       title: "NFS Game",
