@@ -5,6 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from 'react-on-screen';
 import 'lazysizes';
+import bg2 from "../assets/img/bg2.jpg"
 
 
 const Banner = () => {
@@ -42,6 +43,7 @@ const Banner = () => {
     }
 
     return (
+    <div className='lazyload'>
     <section className='banner' id="home"  >
         <Container >
             <Row>
@@ -63,6 +65,7 @@ const Banner = () => {
             </Row>
         </Container>
     </section>
+    </div>
   )
 }
 

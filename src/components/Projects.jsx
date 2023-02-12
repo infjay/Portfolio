@@ -4,7 +4,6 @@ import {Container, Col, Row,Tab,Nav} from "react-bootstrap"
 import colorSharp from "../assets/img/color-sharp.png"
 import projImg1 from "../assets/img/project-img1.png"
 import projImg2 from "../assets/img/project-img2.png"
-import projImg3 from "../assets/img/project-img3.png"
 import nfsImg from "../assets/img/NFS.png"
 import TrackVisibility from "react-on-screen";
 import "animate.css"
@@ -25,7 +24,7 @@ const Projects = () => {
     {
       title: "MyTube",
       description: "Video streaming platform inspired by YouTube",
-      imgUrl: projImg3,
+      imgUrl: "",
     },
     {
       title: "NFS Game",
@@ -44,10 +43,10 @@ const Projects = () => {
            {({ isVisible })=> 
           <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
             <h2>Projects</h2>
-            <p>Meow Meow Projects</p>
+            {/* <p>Meow Meow Projects</p> */}
             </div> }
           </TrackVisibility>
-            <Tab.Container id="projects-tab" defaultActiveKey="first">
+            {/* <Tab.Container id="projects-tab" defaultActiveKey="first">
             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab" >
               <Nav.Item>
                 <Nav.Link eventKey="first">Tab one</Nav.Link>
@@ -62,7 +61,7 @@ const Projects = () => {
               </Nav.Item>
             </Nav>
             <Tab.Content>
-                <Tab.Pane eventKey="first">
+                <Tab.Pane eventKey="first"> */}
                     <Row>
                         {
                             projects.map((project,index)=> {
@@ -75,11 +74,11 @@ const Projects = () => {
                             })
                         }
                     </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">Number 2 </Tab.Pane>
+                {/* </Tab.Pane> */}
+                {/* <Tab.Pane eventKey="second">Number 2 </Tab.Pane>
                 <Tab.Pane eventKey="third">Number 3 </Tab.Pane>
             </Tab.Content>
-            </Tab.Container>
+            </Tab.Container> */}
           </Col>
         </Row>
       </Container>
