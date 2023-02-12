@@ -58,7 +58,7 @@ const Banner = () => {
                     <TrackVisibility>
                     {({ isVisible })=> 
                     <div className={isVisible ? "animate__animated animate__bounceInLeft": ""}>
-                    <button onClick={()=> console.lop("meow") }>Lets Connent<ArrowRightCircle size={25} /></button>
+                    <button onClick={()=> window.open("https://lift.bio/infjay") }>Lets Connent<ArrowRightCircle size={25} /></button>
                     </div>
                     }
                     </TrackVisibility>
