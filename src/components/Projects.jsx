@@ -58,7 +58,7 @@ const Projects = () => {
           <Col>
           <TrackVisibility>
            {({ isVisible })=> 
-          <div className={isVisible ? "animate__animated animate__rubberBand" : ""}>
+          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
             <h2>Projects</h2>
             {/* <p>Meow Meow Projects</p> */}
             </div> }

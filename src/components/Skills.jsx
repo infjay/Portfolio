@@ -9,6 +9,7 @@ import bootstrap from "../assets/img/bootstrap.svg"
 import figma from "../assets/img/figma.svg"
 import typescript from "../assets/img/typescript.svg"
 import colorSharp from "../assets/img/color-sharp.png"
+import TrackVisibility from "react-on-screen"
 
 const Skills = () => {
     const responsive = {
@@ -36,9 +37,12 @@ const Skills = () => {
             <Row>
                 <Col>
                     <div className='skills-bx'  >
-                        <h2>
-                            Tech Stack
-                        </h2>
+                    <TrackVisibility>
+           {({ isVisible })=> 
+          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            <h2>Skills - TechStack</h2>
+            </div> }
+          </TrackVisibility>
                       
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className='item'>
