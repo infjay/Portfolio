@@ -50,7 +50,9 @@ function NavBar() {
                 <a href="https://www.twitter.com" target="_blank"><img src={navIcon2} alt=''/></a>
                 <a href="https://github.com/infjay" target="_blank"><img src={navIcon3} alt=''/></a>
             </div>
-            <button className='vvd' onClick={()=> window.open("https://calendly.com/jawid-nezami",'_blank')}>Get to know me</button>
+          </span>
+          <span className='navbar-text vvd'>
+            <button className='vvd1' onClick={()=> window.open("https://calendly.com/jawid-nezami",'_blank')}>Get to know me</button>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -54,13 +54,13 @@ const Skills = () => {
                             <div className='item'>
                                 <img src={typescript} alt="Image" />
                             </div>
-                            <div className='item'>
+                            <div className='item node'>
                                 <img src={nodejs} alt="Image" />
                             </div>
-                            <div className='item'>
+                            <div className='item bootstrap'>
                                 <img src={bootstrap} alt="Image" />
                             </div>
-                            <div className='item'>
+                            <div className='item figma'>
                                 <img src={figma} alt="Image" />
                             </div>
                 
