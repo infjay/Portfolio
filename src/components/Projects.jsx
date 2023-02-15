@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import {Container, Col, Row,Tab,Nav} from "react-bootstrap"
-import colorSharp from "../assets/img/color-sharp.png"
+import {Container, Col, Row} from "react-bootstrap"
 import projImg1 from "../assets/img/project-img1.png"
 import projImg2 from "../assets/img/project-img2.png"
 import mytube from "../assets/img/mytube.png"

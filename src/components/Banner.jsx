@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from 'react-on-screen';
 import 'lazysizes';
-import bg2 from "../assets/img/bg2.jpg"
+
 
 
 const Banner = () => {
@@ -35,7 +35,7 @@ const Banner = () => {
         if(!isDeleting && updatedText === fullText){
             setIsDeleting(true);
             setDelta(period)
-        } else if(isDeleting && updatedText ===""){
+        } else if(isDeleting && updatedText === ""){
             setIsDeleting(false);
             setLoopNum(loopNum +1)
             setDelta(500);
