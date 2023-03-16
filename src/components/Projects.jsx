@@ -16,7 +16,7 @@ const Projects = () => {
       title: "Mori Element",
       description: "Portfolio Website",
       imgUrl: projImg2,
-      link:"https://infjay.github.io/gericht-restaurant/"
+      link:"https://infjay.github.io/morielement/"
     },
     {
       title: "Landing Page for Chat-GPT",
