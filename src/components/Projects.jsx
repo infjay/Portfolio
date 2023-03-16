@@ -14,8 +14,8 @@ import "animate.css"
 const Projects = () => {
   const projects = [
     {
-      title: "Gericht Restaurant",
-      description: "Fine dining restaurant's Landing page",
+      title: "Mori Element",
+      description: "Portfolio Website",
       imgUrl: projImg2,
       link:"https://infjay.github.io/gericht-restaurant/"
     },
