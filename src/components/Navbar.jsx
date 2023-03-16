@@ -5,9 +5,8 @@ import navIcon2 from "../assets/img/nav-icon2.svg"
 import navIcon3 from "../assets/img/nav-icon3.svg"
 
 
-import { Container, Nav, Navbar,NavDropdown} from "react-bootstrap"
+import { Container, Nav, Navbar} from "react-bootstrap"
 import { useState,useEffect } from "react"
-import { Link } from 'react-bootstrap-icons'
 
 function NavBar() {
     const [activeLink, setActiveLink] = useState("home");
@@ -46,9 +45,9 @@ function NavBar() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="https://www.linkedin.com/in/djawid-nezami/" target="_blank"><img src={navIcon1} alt=''/></a>
-                <a href="https://www.twitter.com" target="_blank"><img src={navIcon2} alt=''/></a>
-                <a href="https://github.com/infjay" target="_blank"><img src={navIcon3} alt=''/></a>
+                <a href="https://www.linkedin.com/in/djawid-nezami/" target="_blank" rel="noreferrer"><img src={navIcon1} alt=''/></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><img src={navIcon2} alt=''/></a>
+                <a href="https://github.com/infjay" target="_blank" rel="noreferrer"><img src={navIcon3} alt=''/></a>
             </div>
           </span>
           <span className='navbar-text vvd'>
